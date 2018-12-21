@@ -1,7 +1,7 @@
 docker-postfix
 ==============
 
-## イメージ・コンテナ作成方法
+## イメージ・コンテナ作成
 ```bash
 $ docker-compose up -d
 ```
