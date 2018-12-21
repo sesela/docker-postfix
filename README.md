@@ -1,6 +1,31 @@
 docker-postfix
 ==============
 
+## イメージ・コンテナ作成方法
+```bash
+$ docker-compose up -d
+```
+
+## コンテナ起動・停止
+```bash
+$ docker-compose start
+$ docker-compose stop
+```
+
+## イメージ・コンテナ削除
+```bash
+$ docker-compose down --rmi all -v
+```
+## 設定ファイルのマウント先確認
+```bash
+$ docker inspect --format='{{.}}' <<コンテナ名orコンテナID>>
+```
+
+
+
+# 以降オリジナルコメント
+-----------
+
 run postfix with smtp authentication (sasldb) in a docker container.
 TLS and OpenDKIM support are optional.
 
