@@ -11,7 +11,6 @@ $ docker-compose up -d
 $ docker-compose start
 $ docker-compose stop
 ```
-
 ## イメージ・コンテナ削除
 ```bash
 $ docker-compose down --rmi all -v
@@ -20,7 +19,10 @@ $ docker-compose down --rmi all -v
 ```bash
 $ docker inspect --format='{{.}}' <<コンテナ名orコンテナID>>
 ```
-
+## 稼働確認
+```bash
+$ telnet localhost 25
+```
 
 
 # 以降オリジナルコメント
