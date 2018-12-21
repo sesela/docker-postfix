@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  postfix:
+    build: .
+    environment:
+      - maildomain=example.com 
+      - smtp_user=username:password
+    ports:
+      - "25:25"
+    volumes:
+      - /etc/postfix
